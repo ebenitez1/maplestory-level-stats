@@ -31,9 +31,9 @@ MIN_LEVEL = THRESHOLDS[0]
 CLASSES = [
     "Adele", "Angelic Buster", "Aran",
     "Arch Mage (F/P)", "Arch Mage (I/L)",
-    "Ark", "Battle Mage", "Beginner", "Bishop", "Blade Master",
+    "Ark", "Battle Mage", "Bishop", "Blade Master",
     "Blaster", "Blaze Wizard", "Bow Master", "Buccaneer", "Cadena",
-    "Cannoneer", "Corsair", "Dark Knight", "Dawn Warrior", "Demon Avenger",
+    "Corsair", "Dark Knight", "Dawn Warrior", "Demon Avenger",
     "Demon Slayer", "Evan", "Hayato", "Hero",
     "Hoyoung", "Illium", "Kain", "Kaiser", "Kanna",
     "Khali", "Kinesis", "Lara", "Luminous", "Marksman",
