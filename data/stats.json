@@ -1,0 +1,8 @@
+{
+  "generated_at": null,
+  "region": "GMS (North America)",
+  "thresholds": [270, 275, 280, 285, 290, 295, 300],
+  "min_level": 270,
+  "classes": {},
+  "duration_seconds": 0
+}
