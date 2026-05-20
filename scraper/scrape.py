@@ -20,8 +20,6 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-import aiohttp
-
 API = "https://www.nexon.com/api/maplestory/no-auth/ranking/v2/na"
 THRESHOLDS = [270, 275, 280, 285, 290, 295, 300]
 MIN_LEVEL = THRESHOLDS[0]
@@ -135,6 +133,7 @@ def safe_filename(name: str) -> str:
 
 
 async def scrape_one(class_name: str):
+    import aiohttp
     timeout = aiohttp.ClientTimeout(total=60)
     conn = aiohttp.TCPConnector(limit=PAGE_CONCURRENCY)
     started = time.time()
@@ -162,6 +161,7 @@ async def scrape_one(class_name: str):
 
 
 async def scrape_all():
+    import aiohttp
     timeout = aiohttp.ClientTimeout(total=60)
     conn = aiohttp.TCPConnector(limit=PAGE_CONCURRENCY)
     results = {}
