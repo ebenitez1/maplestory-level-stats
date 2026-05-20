@@ -24,13 +24,17 @@ API = "https://www.nexon.com/api/maplestory/no-auth/ranking/v2/na"
 THRESHOLDS = [270, 275, 280, 285, 290, 295, 300]
 MIN_LEVEL = THRESHOLDS[0]
 
+# Nexon's `jobName` reflects each character's current job advancement, not
+# the class family. For multi-stage classes, only the final-stage name returns
+# high-level characters. Notably: high-level Dual Blades appear as
+# "Blade Master" (already in this list); querying "Dual Blade" returns 0.
 CLASSES = [
     "Adele", "Angelic Buster", "Aran",
     "Arch Mage (F/P)", "Arch Mage (I/L)",
     "Ark", "Battle Mage", "Beginner", "Bishop", "Blade Master",
     "Blaster", "Blaze Wizard", "Bow Master", "Buccaneer", "Cadena",
     "Cannoneer", "Corsair", "Dark Knight", "Dawn Warrior", "Demon Avenger",
-    "Demon Slayer", "Dual Blade", "Evan", "Hayato", "Hero",
+    "Demon Slayer", "Evan", "Hayato", "Hero",
     "Hoyoung", "Illium", "Kain", "Kaiser", "Kanna",
     "Khali", "Kinesis", "Lara", "Luminous", "Marksman",
     "Mechanic", "Mercedes", "Mihile", "Night Lord", "Night Walker",
